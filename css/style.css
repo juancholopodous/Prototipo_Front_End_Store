@@ -135,5 +135,5 @@ h3 {
     font-family: var(--fuentePrincipal);
     margin: 1rem 0;
     text-align: center;
-    line-height: 1.2; /*interlineado más pequeño que el defin en body*/
+    line-height: 1.2; /*interlineado más pequeño que el defin en el body*/
 }
