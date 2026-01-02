@@ -106,6 +106,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    padding: 0.7rem;
 }
 @media (min-width: 768px) {
     .grid {
@@ -179,7 +180,6 @@ h3 {
         grid-column: 2/ 3;
     }
 }
-
 .nosotros__imagen {
     grid-row: 1/ 2;
     width: 100%;
