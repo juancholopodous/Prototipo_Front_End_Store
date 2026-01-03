@@ -186,3 +186,20 @@ h3 {
     text-align: center;
     padding: 2rem;
 }
+
+/*          ICONOS EN BLOQUES           */
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+.iconos { text-align: center; }
+.subtitulo { margin: 0; } /*los titulos como h1,h2...ya tienen margen*/
+.imagen { width: 100%; }
+
+@media (min-width: 768px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
