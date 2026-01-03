@@ -3,7 +3,7 @@
     --primario: #53d4b8;
     --primarioOscuro: #2c7666;
     --secundario: #dbe85d;
-    --secundarioOscuro: rgb(182, 187, 126);
+    --secundarioOscuro: rgb(189, 202, 41);
     --blanco: #ffffff;
     --negro: #000;
 
@@ -36,7 +36,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .contenedor {
@@ -60,6 +60,7 @@ h3 {
     font-size: 2.4rem;
 }
 
+
 /*          Header          */
 .header {
     display: flex;
@@ -68,6 +69,7 @@ h3 {
 .header__logo {
     margin: 3rem 0;
 }
+
 
 /*          Footer           */
 .footer {
@@ -81,6 +83,7 @@ h3 {
     text-align: center;
     font-size: 2.2rem;
 }
+
 
 /*          Navegación       */
 .navegacion {
@@ -101,6 +104,7 @@ h3 {
     color: var(--secundario);
 }
 
+
 /*      GRID         */
 .grid {
     display: grid;
@@ -120,9 +124,6 @@ h3 {
     background-color: var(--primarioOscuro);
     padding: 1rem;
 }
-.producto__imagen {
-    width: 100%;
-}
 .producto__nombre {
     font-size: 4rem;
 }
@@ -138,6 +139,7 @@ h3 {
     text-align: center;
     line-height: 1.2; /*interlineado más pequeño que el defin en el body*/
 }
+
 
 /*      GRAFICOS         */
 .grafico {
@@ -162,6 +164,7 @@ h3 {
     }
 }
 
+
 /*        GRID NOSOTROS & IMÁGEN          */
 .contenido-nosotros {
     display: grid;
@@ -182,10 +185,10 @@ h3 {
 }
 .nosotros__imagen {
     grid-row: 1/ 2;
-    width: 100%;
     text-align: center;
     padding: 2rem;
 }
+
 
 /*          ICONOS EN BLOQUES           */
 .bloques {
@@ -196,10 +199,53 @@ h3 {
 }
 .iconos { text-align: center; }
 .subtitulo { margin: 0; } /*los titulos como h1,h2...ya tienen margen*/
-.imagen { width: 100%; }
 
 @media (min-width: 768px) {
     .bloques {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+
+/*      PÁGINA DEL PRODUCTO         */
+@media (min-width: 768px) {
+    .camisa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+/*          FORMULARIO           */
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+.formulario__campo {
+    border: 1rem solid var(--primarioOscuro);
+    background-color: transparent;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    width: auto;
+}
+
+.formulario__submit {
+    background-color: var(--secundario);
+    border: none; /*Elimina el borde que tienen todos los inputs*/
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    transition: font-size .3s ease;
+    grid-column: 1/ 3;
+    padding: 1rem;
+}
+.formulario__submit:hover {
+    font-size: 2.4rem;
+    cursor: pointer; /*Agrega el cursor en fomra de mano que se pierde al darle estilos a un Submit*/
+    background-color: var(--secundarioOscuro);    
 }
